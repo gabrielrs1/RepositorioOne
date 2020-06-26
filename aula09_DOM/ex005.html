@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <!-- DOM = Document Object Model -->
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM em JavaScript</p>
+    <div id="msg">Clique em min</div>
+
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        window.document.write('Está escrito assim: ' + p1.innerText)
+
+        /* let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aki.'
+        */
+        // window.document.getElementById('msg').innerText = 'Olá'
+
+        //let d = window.document.getElementsByName('msg')[0]
+        //d.innerText = 'Olá!'
+
+        let d = window.document.querySelector('div#msg') // essa # identifica o ID. Também possui . (ponto) = classe
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>

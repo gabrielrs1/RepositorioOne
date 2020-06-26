@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Número (entre 1 a 100):
+                <input type="number" name="fnum" id="fnum">
+                <input type="button" value="Adicionar" onclick="add()">
+            </p>
+            <select name="flista" id="flista" size="6">
+                <option>Números entraram aki: </option>
+            </select><br/>
+            <input type="button" value="Finalizar" onclick="end()">
+        </div>
+
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
